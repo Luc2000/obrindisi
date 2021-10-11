@@ -63,7 +63,7 @@ $(function(){
                 $('#kitouro #content-cards_ouro .milheiro .text-center').addClass('animate__animated animate__hinge');
 
                 setTimeout(() => {
-                    $('#kitouro #content-cards_ouro .milheiro').prepend('<p class="text-center animate__animated animate__jackInTheBox" style="font-size: 1.7rem;  white-space: nowrap;height: fit-content;"><i class="fas fa-dollar-sign mr-2"></i>9,99/Un.</p>');
+                    $('#kitouro #content-cards_ouro .milheiro').prepend('<p class="text-center animate__animated animate__jackInTheBox" style="font-size: 1.7rem;  white-space: nowrap;height: fit-content;"><i class="fas fa-dollar-sign mr-2"></i>7,99/Un.</p>');
                     $('#kitouro #content-cards_ouro .milheiro .selos').html(`
                         <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
                         <p style="color: #fff;">+</p>
@@ -111,11 +111,7 @@ $(function(){
     var observer2 = new IntersectionObserver(function(entries) {
         
     if(entries[0].isIntersecting === true){
-        console.log('Entrou globe e index é '+index2);
-
         if(index2 === 0){
-            console.log('Entrou globe');
-
             var milheiro = document.getElementById("milheiro_globe");
             var cinquilheiro = document.getElementById("cinquilheiro_globe");
             animateValue(milheiro, 0, 1000, 1700);    

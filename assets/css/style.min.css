@@ -11130,6 +11130,7 @@ blockquote-title {
 }
 
 @media only screen and (max-width: 767.98px) {
+  #globe .col-lg-6, #kitouro .col-lg-6,  .main-content-price{ margin-top: 40px;}
   .call-to-contact {
     margin-top: 30px;
   }
