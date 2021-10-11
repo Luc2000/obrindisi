@@ -159,6 +159,7 @@
 }
 
 #rev_slider_christmas_wrapper .nav-dir-horizontal{display: none!important;}
+.forcefullwidth_wrapper_tp_banner{ height: 100%!important;}
 
 .main-content-price i{display: block; font-size: 33px;}
 .main-content-price a{ font-size: 23px; font-weight: bold; color: #28304d; transition: all ease-in-out .2s; display: block; text-align: center; width: 33%; margin-right: 3%;}
