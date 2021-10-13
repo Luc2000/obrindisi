@@ -68,7 +68,6 @@ $(function(){
     var observer = new IntersectionObserver(function(entries) {
         if(entries[0].isIntersecting === true){
             if(index === 0){
-                console.log('Entrou kitouto');
                 var milheiro = document.getElementById("milheiro_ouro");
                 var cinquilheiro = document.getElementById("cinquilheiro_ouro");
                 animateValue(milheiro, 0, 1000, 1700);    
