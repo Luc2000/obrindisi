@@ -1,3 +1,17 @@
+function globe_more(){
+    $('#globe .saiba_mais').hide();
+
+    $('#globe .category').html(`Esfera de 6,5 cm feita em polimetilmetracrilato, texturizada internamente com glitter contendo mini bíblia com salmo e raminho natalino em material sintético, acabamento com fita de cetim e adesivo personalizável 2x2.`);
+    $('#globe .category').css('margin-top','33px');
+}
+function ouro_more(){
+    $('#kitouro .saiba_mais').hide();
+
+    $('#kitouro .category').html(`Saquinho de organza dourado nas proporções 7x9 contendo imã de geladeira em formato de bíblia, pingente dourado, raminho natalino em material sintético, auto adesivo com a marca do cliente 4x4.`);
+    $('#kitouro .category').css('margin-top','33px');
+}
+
+
 function animateValue(obj, start, end, duration) {
     let startTimestamp = null;
 
@@ -63,11 +77,12 @@ $(function(){
                 $('#kitouro #content-cards_ouro .milheiro .text-center').addClass('animate__animated animate__hinge');
 
                 setTimeout(() => {
-                    $('#kitouro #content-cards_ouro .milheiro').prepend('<p class="text-center animate__animated animate__jackInTheBox" style="font-size: 1.7rem;  white-space: nowrap;height: fit-content;"><i class="fas fa-dollar-sign mr-2"></i>7,99/Un.</p>');
+                    $('#kitouro #content-cards_ouro .milheiro').prepend('<p class="text-center animate__animated animate__jackInTheBox" style="font-size: 1.5rem;  white-space: nowrap;height: fit-content;">R$ 7,99/Un.</p>');
                     $('#kitouro #content-cards_ouro .milheiro .selos').html(`
-                        <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
-                        <p style="color: #fff;">+</p>
-                        <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
+                        <div class="interno">
+                            <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
+                            <span class="mt-2" >Adesivo personalizado</span>
+                        </div>
                     `);
                 }, 2200);
 
@@ -76,19 +91,20 @@ $(function(){
                 }, 3000);
 
                 setTimeout(() => {
-                    $('#kitouro #content-cards_ouro .cinquilheiro').prepend('<p class="text-center animate__animated animate__zoomInUp" style="font-size: 2rem; white-space: nowrap;height: fit-content;"><i class="fas fa-dollar-sign mr-2"></i>5,99/Un.</p>');
+                    $('#kitouro #content-cards_ouro .cinquilheiro').prepend('<p class="text-center animate__animated animate__zoomInUp" style="font-size: 1.7rem; white-space: nowrap;height: fit-content;">R$ 5,99/Un.</p>');
                     setTimeout(() => {
                         $('#kitouro #content-cards_ouro .cinquilheiro').addClass('active');
 
                         $('#kitouro #content-cards_ouro .cinquilheiro .selos').html(`
-                            <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
-                            <p style="color: #fff; margin-top: 95px;">+</p>
-                            <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
-                        `);
-
-                        $('#kitouro #content-cards_ouro .cinquilheiro .video').html(`
-                            <i class="fas fa-video"></i>
-                            <p>Vídeo Institucional</p>
+                            <div class="interno">
+                                <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
+                                <span>Frete grátis</span>
+                            </div>
+                            <p class="text-center my-2">+</p>
+                            <div class="interno">
+                                <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
+                                <span class="mt-2">Adesivo personalizado</span>
+                            </div>
                         `);
                     }, 700);
                 }, 4900);
@@ -120,11 +136,12 @@ $(function(){
             $('#globe #content-cards_globe .milheiro .text-center').addClass('animate__animated animate__hinge');
 
             setTimeout(() => {
-                $('#globe #content-cards_globe .milheiro').prepend('<p class="text-center animate__animated animate__jackInTheBox" style="font-size: 1.7rem;  white-space: nowrap;height: fit-content;"><i class="fas fa-dollar-sign mr-2"></i>9,99/Un.</p>');
+                $('#globe #content-cards_globe .milheiro').prepend('<p class="text-center animate__animated animate__jackInTheBox" style="font-size: 1.5rem;  white-space: nowrap;height: fit-content;">R$ 9,99/Un.</p>');
                 $('#globe #content-cards_globe .milheiro .selos').html(`
-                    <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
-                    <p style="color: #fff;">+</p>
-                    <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
+                    <div class="interno">
+                        <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
+                        <span class="mt-2">Adesivo personalizado</span>
+                    </div>
                 `);
             }, 2200);
 
@@ -133,19 +150,20 @@ $(function(){
             }, 3000);
 
             setTimeout(() => {
-                $('#globe #content-cards_globe .cinquilheiro').prepend('<p class="text-center animate__animated animate__zoomInUp" style="font-size: 2rem; white-space: nowrap;height: fit-content;"><i class="fas fa-dollar-sign mr-2"></i>5,99/Un.</p>');
+                $('#globe #content-cards_globe .cinquilheiro').prepend('<p class="text-center animate__animated animate__zoomInUp" style="font-size: 1.7rem; white-space: nowrap;height: fit-content;">R$ 5,99/Un.</p>');
                 setTimeout(() => {
                     $('#globe #content-cards_globe .cinquilheiro').addClass('active');
 
                     $('#globe #content-cards_globe .cinquilheiro .selos').html(`
-                        <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
-                        <p style="color: #fff; margin-top: 95px;">+</p>
-                        <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
-                    `);
-
-                    $('#globe #content-cards_globe .cinquilheiro .video').html(`
-                        <i class="fas fa-video"></i>
-                        <p>Vídeo Institucional</p>
+                        <div class="interno">
+                            <i class="icon-ecommerce-cart-content animate__animated animate__lightSpeedInLeft" style="color: #fff;" ></i>
+                            <span>Frete grátis</span>
+                        </div>
+                        <p class="text-center my-2">+</p>
+                        <div class="interno">
+                            <i class="far fa-grin-hearts animate__animated animate__heartBeat" style="color: #fff;"></i>
+                            <span class="mt-2">Adesivo personalizado</span>
+                        </div>
                     `);
                 }, 700);
             }, 4900);

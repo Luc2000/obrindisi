@@ -3,8 +3,8 @@
   align-items: center;
 }
 .title-header {
-  margin-bottom: 5px;
-  font-size: 20px;
+  margin-bottom: 0px;
+  font-size: 16px;
   font-weight: bold;
 }
 .logo-parceiro img {
@@ -84,7 +84,7 @@
 }
 .card-price .text-center {
   color: #f2b636;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .counter-number {
   font-weight: bold;
@@ -122,6 +122,27 @@
     width: 100%;
 }
 
+.saiba_mais{
+    color: #f2b636;
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 1px solid #f2b636;
+    border-radius: 5px;
+    background-color: #000;
+    transition: all ease-in-out .4s;
+    font-weight: bold;
+}
+.saiba_mais:hover{
+  color: #000;
+  background-color: #f2b636;
+}
+
+.category { transition: all ease-in-out .3s ; opacity: 1;}
+
+
+.section-title a{ color: #28304d; transition: all ease-in-out .2s!important;}
+.section-title a:hover{ color: #556497; transition: all ease-in-out .2s!important;}
+
 #content-cards_globe .cinquilheiro.active{
     box-shadow: 2px 2px 27px 0px #a5180d inset, 1px 0px 14px 5px rgb(137 58 75);
     -webkit-box-shadow: 2px 2px 27px 0px #a5180d inset, 1px 0px 14px 5px rgb(137 58 75);
@@ -135,28 +156,17 @@
 }
 
 .cinquilheiro .selos{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    top: 8%;
-    font-size: 40px;
-    width: 100%;
+  display: block;
+  font-size: 40px;
+  width: 100%;
+  margin-top: -240px;
 }
 
-.cinquilheiro .video{
-    display: block;
-    position: absolute;
-    top: 47%;
-    font-size: 23px;
-    width: 100%;
-    color: #fff;
-    margin: 0 auto;
-    text-align: center;
-}
-.cinquilheiro .fa-video{
-    font-size: 38px;
-}
+
+.selos .interno{ display: flex; flex-wrap: wrap; }
+.selos .interno i{ width: 100%; text-align: center;}
+.selos span{ width: 100%; font-size: 13px; color: #fff; text-align: center;}
+.selos .text-center.my-2{ font-size: 33px; color: #fff; font-weight: bold;}
 
 #rev_slider_christmas_wrapper .nav-dir-horizontal{display: none!important;}
 .forcefullwidth_wrapper_tp_banner{ height: 100%!important;}
@@ -729,7 +739,6 @@ button:focus {
 @media only screen and (max-width: 767.98px) {
   #globe .section-title h5 {
     color: rgb(196, 0, 0);
-    text-align: center;
     display: block;
     
   }
@@ -748,8 +757,12 @@ button:focus {
 }
 
 @media only screen and (max-width: 767.98px) {
+  .move_left{
+    left: 32px!important;
+  }
+  .category{margin-top: 0!important;}
   .section-title p {
-    margin-top: 14px;
+    margin-top: 30px;
   }
 }
 
@@ -758,6 +771,8 @@ button:focus {
 }
 
 @media only screen and (max-width: 767.98px) {
+  .section-title h5{font-size: 27px!important;}
+  .portfolio-item__info .category{ font-size: 15px!important;}
   .section-title .btn {
     margin-top: 20px;
   }
@@ -5949,7 +5964,7 @@ blockquote-title {
 .portfolio-item__info .category {
   color: #fff;
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.6em;
   text-transform: capitalize;
   display: inline-block;
   -webkit-transition: 0.4s;
@@ -5958,6 +5973,8 @@ blockquote-title {
   -webkit-transform: translateY(20px);
   -ms-transform: translateY(20px);
   transform: translateY(20px);
+  width: 90%;
+  
 }
 
 .portfolio-item:hover:before {
@@ -7250,7 +7267,7 @@ blockquote-title {
 }
 
 .icon-box-item .icon-box__icon {
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
   margin-bottom: 27px;
   text-transform: uppercase;
@@ -7278,7 +7295,7 @@ blockquote-title {
 }
 
 .icon-box-item .icon-box__txt {
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .icon-box-item .icon-box__txt .btn {
